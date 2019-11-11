@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreaterBank Sign Up</title>
+    <link rel="stylesheet" href="SignUp1.css">
+    <!-- ICONS LINK -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+/* PROGRESS BAR*/
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+/* Progress Icons*/
+ul li .fa{
+    background: #ccc;
+    width: auto;
+    height: 50%;
+    color:white;
+    border-radius: 50%;
+    padding: 5%;
+    margin-bottom: 30%;
+    
+}
+/* Bar */
+ul li .fa::after{
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}
+
+
+/* Progress Bar Color */
+ul li:nth-child(1) .fa{
+    background: #212A42;
+}
+
+ul li:nth-child(1) .fa::after{
+    background: #212A42;
+}
+
+ul li:nth-child(2) .fa{
+    background: #E5813F;
+}
+
+ul li:nth-child(2) .fa::after{
+    background: #E5813F;
+}
+
+ul li:nth-child(3) .fa{
+    background: #3683C4;
+}
+
+ul li:nth-child(3) .fa::after{
+    background: #3683C4;
+}
+
+ul li:nth-child(4) .fa{
+    background: #3683C4;
+}
+
+ul li:nth-child(4) .fa::after{
+    background: #3683C4;
+}
+
+ul li:nth-child(5) .fa{
+    background: #3683C4;
+}
+
+ul li:nth-child(5) .fa::after{
+    background: #3683C4;
+}
+
+/* Different Stage Icons*/
+#Icon{
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    color: #212A42;
+    font-size: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 5px
+}
+</style>
+
+<header>
+    <li><a href="index.html"><img src="logo.png" alt="logo"></a></li>
+</header>
+
+<body>
+    <div class="front cover">
+
+    </div>
+    <!-- PROGRESS BAR -->
+    <div class="progress">
+            <ul>
+                <li>
+                    <i id='Icon' class="fa fa-user" aria-hidden="true"></i><br>
+                    <i class="fa fa-check"></i>
+                </li>
+                <li>
+                    <i id='Icon' class="fa fa-home" aria-hidden="true"></i><br>
+                    <i class="fa fa-refresh"></i>
+                </li>
+                <li>
+                    <i id='Icon' class="fa fa-at" aria-hidden="true"></i><br>
+                    <i class="fa fa-times"></i>
+                </li>
+                <li>
+                    <i id="Icon" class="fa fa-usd" aria-hidden="true"></i><br>
+                    <i class="fa fa-times"></i>
+                </li>
+                <li>
+                    <i id='Icon' class="fa fa-id-card-o" aria-hidden="true"></i><br>
+                    <i class="fa fa-times"></i>
+                </li>
+            </ul>
+    </div>
+
+    <!-- PERSONAL DETAIL Questions -->
+    <main>
+        <form>
+            <h1>Residential Info</h1>
+            <div class="form-group">
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter your address here">
+                        <div class="messages"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter your city here">
+                        <div class="messages"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Select your state</option>
+                            <option value="NSW">NSW</option>
+                            <option value="QLD">QLD</option>
+                            <option value="VIC">VIC</option>
+                            <option value="WA">WA</option>
+                            <option value="TAS">TAS</option>
+                            <option value="NT">NT</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode">Postcode </label>
+                        <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode here">
+                        <div class="messages"></div>
+                    </div>
+                    
+                    <div class="form-group" id="button" style="margin-bottom:150px;">
+                            <a href="SignUp1.html" id="back">&laquo; Previous</a>
+                            <a href="SignUp3.html" id="next">Next &raquo;</a>
+                    </div>
+
+
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="SignUp1.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+</html>

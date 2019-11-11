@@ -1,0 +1,260 @@
+/*Animated refresh icon*/
+
+.fa-refresh{
+  animation: spin 9s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Icon*/
+i.fa.fa-refresh::after{
+  height: 0px;
+  width:0px;
+}
+
+/*ID PHOTO Help*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Getting rid of white outline*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background: #212A42;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin-bottom: 50px
+
+}
+
+/* LOGO */
+header img{
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+    
+}
+
+h1{
+    font-family: Gloriola, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px
+}
+
+body{
+    font-family: Avenir, sans-serif;
+}
+
+/* SIGN UP*/
+main{
+    margin:50px
+}
+
+label{
+    font-family: Avenir - Bold;
+    font-size: 19px
+}
+
+/*Header links*/
+#about a{
+  color:white;
+  transition: 0.4s;
+}
+
+#about a:hover{
+  color: #ecdb43;
+}
+
+
+/* Buttons*/
+#button{
+  text-align: center;
+}
+
+#next {
+    width: 200px;
+    padding: 16px 42px;
+    border: none;
+    background: radial-gradient( #ecdb43, #e69834);
+    color: #212A42;
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-bottom: 200px;
+  }
+#next:hover{
+    background: #3683C4;
+    color: #fff;
+}
+  
+#back {
+    width: 200px;
+    padding: 16px 32px;
+    border: none;
+    background: #ccc;
+    color: #212A42;
+    border-radius: 30px;
+    font-family: Avenir;
+    font-size: 15px;
+    margin-right: 25px;
+    transition: 0.4s;
+    margin-bottom: 200px;
+}
+#back:hover{
+    background: #3683C4;
+    color: #fff;
+}
+
+form .form-group button{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+form * {
+    box-sizing: border-box;
+}
+  
+/*Text boxes*/
+form .form-group input,
+form .form-group select {
+    padding: 16px;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: #212A42;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: Avenir;
+    font-size: 13px;
+    display: block;
+}
+
+form > .form-group > label{
+    display: block;
+}
+
+footer{
+    background: #212A42;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom:0;
+}
+
+/*DROP DOWN MESSAGE*/
+form .messages {
+    flex: 0 0 100%;
+    text-align: right;
+    padding: 5px 0;
+    color: #ff6361;
+  }
+  
+  /*INPUT INFO*/
+  form .form-group.has-error > input,
+  form .form-group.has-error > select  {
+    border: 2px solid #ff6361;
+  }
+  
+  form .form-group.has-success > input,
+  form .form-group.has-success > select  {
+    border: 2px solid #41a765;
+  }
+  
+  
+  /*MEDIA QUERIES*/
+  @media screen and (max-width: 769px) {
+    .flex-container {
+      display: block;
+    }
+    .flex-column {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    main {
+      width: auto;
+      border-radius: 0;
+    }
+  
+    form {
+      width: 100%;
+  
+    }
+  
+    form > .form-group > label{
+      flex: 0 0 100%;
+      text-align: left;
+      padding: 10px;
+    }
+  
+    form > .form-group > label + * {
+      flex: 0 0 100%;
+    }
+  
+    form .form-group button {
+      width: 100%;
+    }
+  
+  }

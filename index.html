@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreaterBank</title>
+    <link rel="stylesheet" href="HomePage.css">
+    <!-- ICONS LINK -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+    <div class="topnav">
+            <li><a href="index.html"><img src="logo.png" alt="logo"></a></li>
+            <div class="topnav-right">
+                    <li><a href=https://www.greater.com.au/about><p id="about" style="margin-right: 50px;">About</p></a></li> 
+                    <li><a href=https://www.greater.com.au/contact-us/branch-locator><p id="help" style="margin-right: 50px;">Help</p></a></li>
+                    <a href="https://ib.greater.com.au/OnlineBanking/Login.aspx">
+                        <button type="submit" id="next" style="display:block; margin:auto; margin-top: -15px;">Login</button>
+                    </a>
+            </div>
+     </div>
+</header>
+
+<style>
+/* Personalised Progress Bar Color */
+    ul li:nth-child(1) .fa{
+    background: #212A42;
+    }
+
+    ul li:nth-child(1) .fa::after{
+        background: #212A42;
+    }
+
+    ul li:nth-child(2) .fa{
+        background: #212A42;
+    }
+
+    ul li:nth-child(2) .fa::after{
+        background: #212A42;
+    }
+
+    ul li:nth-child(3) .fa{
+        background: #212A42;
+    }
+
+    ul li:nth-child(3) .fa::after{
+        background: #212A42;
+    }
+
+    ul li:nth-child(4) .fa{
+        background: #212A42;
+    }
+
+    ul li:nth-child(4) .fa::after{
+        background: #212A42;
+    }
+
+    ul li:nth-child(5) .fa{
+        background: #212A42;
+    }
+
+    ul li:nth-child(5) .fa::after{
+        background: #212A42;
+    }
+
+    /* PROGRESS BAR*/
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    width: 15%;
+    position: relative;
+}
+/* Progress Icons*/
+ul li .fa{
+    background: #ccc;
+    width: auto;
+    height: 50%;
+    color:white;
+    border-radius: 50%;
+    padding: 5%;
+    margin-bottom: 30%;
+    
+}
+/* Bar */
+ul li .fa::after{
+    background: #ccc;
+    height: 5px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 145px;
+    z-index: -1;
+}
+
+
+
+/* Different Stage Icons*/
+#Icon{
+    background: #fff;
+    width: 75px;
+    height: 75px;
+    color: #212A42;
+    font-size: 90px;
+    border-radius: 1000%;
+    padding: 3px;
+    margin-bottom: 50px
+}
+</style>
+
+<body>
+        <main>  
+
+            <!-- Background Image -->
+            <div style="width: 100%; height: 1100px; background-image: url(background.jpg); background-size: cover;                   /* <------ */
+            background-repeat: no-repeat;
+            background-position: center center; ">
+            </div>
+
+            <!-- Text on photo -->
+
+            <div style="margin-left:200px; margin-top:-850px; margin-bottom: 550px; background-color: #fff; width: 35%; padding:30px;">   
+                    <h1 style="padding:20px;">A Great way to get started</h1>
+                    <h2 style="margin-top: 20px; margin-bottom: 50px; padding:20px; font-size: 19px;">Providing a service that makes you feel more like a person than a number.</h2>
+                    <div class="form-group">
+                        <a href="SignUp1.html">
+                            <button style="margin-top: 50px; display:block; margin:auto;" type="submit" id="next">Sign Up</button>
+                        </a>
+                    </div>
+            </div>
+            
+                <!-- PROGRESS BAR -->
+            <div style="width: 100%; height: 500px;">
+                <div class="progress" style="margin: 25px;">
+                    <h1 style="margin-top: 100px; margin-bottom: 50px; text-align: center;">Just 5 Simple Steps</h1>
+                    <ul>
+                        <li>
+                            <i id='Icon' class="fa fa-user" aria-hidden="true"></i><br>
+                            <i class="fa fa-check"></i>
+                            <p>Personal Details</p>
+                        </li>
+                        <li>
+                            <i id='Icon' class="fa fa-home" aria-hidden="true"></i><br>
+                            <i class="fa fa-check"></i>
+                            <p>Residential Info</p>
+                        </li>
+                        <li>
+                            <i id='Icon' class="fa fa-at" aria-hidden="true"></i><br>
+                            <i class="fa fa-check"></i>
+                            <p>Contact</p>
+                        </li>
+                        <li>
+                            <i id="Icon" class="fa fa-usd" aria-hidden="true"></i><br>
+                            <i class="fa fa-check"></i>
+                            <p>Employment</p>
+                        </li>
+                        <li>
+                            <i id='Icon' class="fa fa-id-card-o" aria-hidden="true"></i><br>
+                            <i class="fa fa-check"></i>
+                            <p style="margin-bottom: 50px;">Identification</p>
+                        </li>
+                    </ul>
+                    <div class="form-group">
+                            <a href="SignUp1.html">
+                                <button type="submit" id="next" style="display:block; margin:auto;">Create An Account</button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        <div style="width: 90%; height: 300px;  margin: 50px;">
+            <div id="final">
+                <h1 style="text-align: center; margin-bottom: 50px; margin-top: 100px">Why GreaterBank?</h1>
+                <p style="width:45%; padding:20px; float:left; font-size: 19px;">Here at GreaterBank we provide a range of services to ensure that you make the most out of your money. These include personal loans, house loans, credit cards, savings accounts, everyday accounts and insurance.</p>
+                <p style="width:45%; padding:20px; float: left; font-size: 19px; margin-bottom: 50px;">We were voted home lender of the year twice in 2019. As a result of our assistance many customers have been able to get a head start into their future. We hope to one day do the same for you.</p>
+                <a href="SignUp1.html">
+                        <button type="submit" id="next" style="display:block; margin:auto; margin-bottom: 20px;">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer style="background: #212A42; color: #fff; width: 100%; height: 100px; margin-top: 20%; display:flex;">
+    <li><a href="https://www.facebook.com/GreaterBankAU/"><i class="fa fa-facebook-official"></i></a></li>
+    <li><a href="https://www.instagram.com/greaterbank/?hl=en"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://twitter.com/GreaterBankAU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter-square"></i></a></li>
+</footer>
+</html>
